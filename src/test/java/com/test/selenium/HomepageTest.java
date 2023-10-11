@@ -44,7 +44,7 @@ public class HomepageTest {
         String alertText = alertMessage.getText();
         System.out.println(alertText);
         System.out.println("Checkout Failed");
-        System.out.println("Checkout Failed 123");
+        System.out.println("Checkout Failed 123456");
     }
 
 }
