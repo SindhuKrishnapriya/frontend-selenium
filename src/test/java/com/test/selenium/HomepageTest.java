@@ -43,6 +43,7 @@ public class HomepageTest {
         WebElement alertMessage = driver.findElement(By.xpath("//*[@class='alert alert-danger alert-dismissible']"));
         String alertText = alertMessage.getText();
         System.out.println(alertText);
+        System.out.println("Checkout Failed");
     }
 
 }
