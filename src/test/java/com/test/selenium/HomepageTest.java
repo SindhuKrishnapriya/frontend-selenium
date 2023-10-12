@@ -15,7 +15,7 @@ public class HomepageTest {
 
         driver.get("http://tutorialsninja.com/demo/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
 //Login
         driver.findElement(By.xpath("//a[@title='My Account']")).click();
@@ -44,7 +44,8 @@ public class HomepageTest {
         String alertText = alertMessage.getText();
         System.out.println(alertText);
         System.out.println("Checkout Failed");
-        System.out.println("Checkout Failed 123456");
+
+        driver.quit();
     }
 
 }
